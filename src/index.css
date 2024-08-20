@@ -1,13 +1,400 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: SFProText, Audiowide sans-serif;
+}
+@import 'aos/dist/aos.css';
+@font-face {
+  font-family: Audiowide;
+  src: url("./fonts/Audiowide-Regular.ttf");
+}
+@font-face {
+  font-family: SFProText;
+  src: url("./fonts/SF\ Pro\ text/SFProText-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: SFProText;
+  src: url("./fonts/SF\ Pro\ text/SFProText-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: SFProText;
+  src: url("./fonts/SF\ Pro\ text/SFProText-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: SFProText;
+  src: url("./fonts/SF\ Pro\ text/SFProText-Semibold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: SFProText;
+  src: url("./fonts/SF\ Pro\ text/SFProText-Bold.ttf");
+  font-weight: 700;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+  cursor: pointer;
+}
+h5 {
+  margin-bottom: 0 !important;
+  font-family: Audiowide;
+  cursor: pointer;
+}
+.front {
+  color: #0066ff;
+  font-size: 6rem;
+  font-family: Audiowide;
+}
+.end {
+  color: #000;
+  font-family: Audiowide;
+  font-size: 6rem;
+}
+.developer {
+  color: transparent;
+  -webkit-text-stroke: 3px #000;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: -1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.inst {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0066ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.instagram {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.About_Us {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.lin {
+  width: 100%;
+  height: 1px;
+  background-color: #969696;
+  margin-top: 10px;
+}
+.front-end {
+  line-height: 1;
+}
+.section {
+  display: grid;
+  grid-template-columns: 60% 50%;
+  gap: 50px;
+}
+
+.logo {
+  width: 70%;
+  height: 75%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.top {
+  margin-top: 50px;
+}
+.text {
+  margin-top: 30px;
+  transition: all 1s ease-in-out;
+  width: 70%;
+}
+
+.text span {
+  font-weight: 800;
+  color: #000;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.tes {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.tes.expanded {
+  max-height: 600px;
+}
+
+.btn {
+  margin-top: 30px !important;
+  background-color: #0066ff !important;
+  padding: 10px 15px !important;
+  border: none;
+  color: #fff !important;
+  border-radius: 10px !important;
+  margin-bottom: 50px !important;
+}
+.btn-mobile {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: transparent;
+  color: #000;
+  margin: 0 10px !important;
+  width: 100% !important;
+}
+.btn-mobil{
+  display: block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: transparent;
+  color: #000;
+  margin: 0 10px !important;
+}
+.btn-mobil a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.slick-track {
+  display: flex !important;
+  gap: 20px !important;
+}
+.tops {
+  margin-top: 20px !important;
+  border: 2px solid #0066ff !important;
+  color: #0066ff;
+}
+
+.about {
+  text-align: center;
+  margin-top: 100px;
+  color: #000 !important;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.about span {
+  font-family: Audiowide;
+  color: #0066ff;
+  font-weight: 400 !important;
+}
+.telegram a {
+  font-family: Audiowide;
+  color: #0066ff;
+  font-size: 35px;
+  font-weight: 400 !important;
+}
+.detil-about {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 20px;
+}
+
+.detil-about h3 {
+  color: #0066ff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.detil-about h6 {
+  font-size: 14px;
+  margin-top: 20px !important;
+  font-weight: 700;
+}
+.detil-about p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.detil-about span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #969696;
+}
+
+.java {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(90px , 1fr));
+  margin-bottom: 50px;
+  grid-column-gap: 96px;
+  margin-top: 50px !important;
+}
+.none{
+  display: none;
+}
+.redux {
+  gap: 20px;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+ margin-left: 100px;
+ align-items: center;
+}
+.materialUI {
+  margin-top: 50px !important;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 70px;
+  margin: auto;
+}
+.vue {
+  width: 110px;
+}
+.btn-project {
+  background: transparent;
+  border: 1px solid #0066ff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  color: #0066ff;
+  font-weight: 500;
+}
+.projects p {
+  color: #000;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px !important;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.felx {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.telegram {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-contact{
+  margin-top: 30px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skil{
+  background-color: #F5F5F5;
+  padding: 30px;
+  border-radius: 20px;
+}
+.skil h3{
+  color: #0066ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.skil ul{
+  color: #000;
+  font-weight: 700;
+  margin-left: -10px;
+}
+.skil ul span{
+  font-weight: 500;
+}
+.all_skill{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 20px;
+}
+@media(max-width:780px){
+  .section{
+display: flex;
+flex-direction: column-reverse;
+  }
+  .developer{
+    color: transparent;
+    -webkit-text-stroke: 2px #000;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index: -1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+  }  
+  .text{
+    width: 100%;
+  }
+  .About_Us{
+    display: none;
+  }
+  .end{
+    font-size: 4rem;
+    text-align: center;
+  }
+  .front {
+    text-align: center;
+    color: #0066ff;
+    font-size: 3rem;
+    font-family: Audiowide;
+  }
+  .logo {
+    width: 100%;
+    height: 70% !important;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .java {
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.redux{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  text-align: center;
+  align-items: center;
+  margin-left: 0;
+}
+.none{
+  display: block;
+}
+.felx img{
+  width: 100%;
+}
+.btn-mobil{
+  margin: 0;
+}
+.btn-mobile{
+  font-size: 14px;
+}
 }
