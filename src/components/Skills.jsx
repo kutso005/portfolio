@@ -7,7 +7,7 @@ export default function Skills() {
            мои <span>skills</span>
         </h1>
         <div className='all_skill'>
-            <div className='skil'>
+            <div data-aos="zoom-in" className='skil'>
                 <h3>Hard skills</h3>
                 <ul><li>API: <span>Опыт разработки и интеграции RESTful и GraphQL API</span></li></ul>
                 <ul><li>SEO: <span>Знание принципов поисковой оптимизации (SEO) для улучшения видимости веб-страниц</span></li></ul>
@@ -18,7 +18,7 @@ export default function Skills() {
                 <ul><li>Версионный контроль:  <span>Опыт работы с системами контроля версий, такими как Git, для управления кодом и совместной работы над проектами</span></li></ul>
                 <ul><li>Инструменты разработчика:  <span>Знание инструментов разработчика  в браузере для отладки и анализа производительности веб-страниц</span></li></ul>
             </div>
-            <div className='skil'>
+            <div data-aos="zoom-in" className='skil'>
                 <h3>Soft skills</h3>
                 <ul><li>Коммуникация:  <span>Эффективное взаимодействие с членами команды и заказчиками для понимания требований и достижения общих целей проекта</span></li></ul>
                 <ul><li>Креативность:  <span>Нахождение инновационных и качественных решений в процессе разработки</span></li></ul>

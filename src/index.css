@@ -3,7 +3,7 @@
   padding: 0;
   font-family: SFProText, Audiowide sans-serif;
 }
-@import 'aos/dist/aos.css';
+@import "aos/dist/aos.css";
 @font-face {
   font-family: Audiowide;
   src: url("./fonts/Audiowide-Regular.ttf");
@@ -142,12 +142,24 @@ h5 {
 .tes.expanded {
   max-height: 600px;
 }
-
+button:hover{
+  opacity: 0.9;
+  margin-left: 10px ;
+  transition: all 0.5s ease-in-out;
+}
+button a{
+  text-decoration: none !important;
+}
+.btn a{
+  color: #fff;
+  text-decoration: none;
+}
 .btn {
   margin-top: 30px !important;
   background-color: #0066ff !important;
   padding: 10px 15px !important;
   border: none;
+  text-decoration: none;
   color: #fff !important;
   border-radius: 10px !important;
   margin-bottom: 50px !important;
@@ -161,7 +173,7 @@ h5 {
   margin: 0 10px !important;
   width: 100% !important;
 }
-.btn-mobil{
+.btn-mobil {
   display: block;
   padding: 10px 20px;
   border-radius: 25px;
@@ -169,7 +181,7 @@ h5 {
   color: #000;
   margin: 0 10px !important;
 }
-.btn-mobil a{
+.btn-mobil a {
   text-decoration: none;
   color: #000;
   font-weight: 600;
@@ -237,20 +249,20 @@ h5 {
 
 .java {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(90px , 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   margin-bottom: 50px;
   grid-column-gap: 96px;
   margin-top: 50px !important;
 }
-.none{
+.none {
   display: none;
 }
 .redux {
   gap: 20px;
- display: grid;
- grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
- margin-left: 100px;
- align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 100px;
+  align-items: center;
 }
 .materialUI {
   margin-top: 50px !important;
@@ -287,7 +299,6 @@ h5 {
 }
 
 .felx {
-  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,44 +311,77 @@ h5 {
   align-items: center;
 }
 
-.btn-contact{
+.btn-contact {
   margin-top: 30px;
-  display: flex ;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
   flex-wrap: wrap;
   gap: 20px;
 }
-.skil{
-  background-color: #F5F5F5;
+.skil {
+  background-color: #f5f5f5;
   padding: 30px;
   border-radius: 20px;
 }
-.skil h3{
+.skil h3 {
   color: #0066ff;
   font-size: 20px;
   font-weight: 700;
 }
-.skil ul{
+.skil ul {
   color: #000;
   font-weight: 700;
   margin-left: -10px;
 }
-.skil ul span{
+.skil ul span {
   font-weight: 500;
 }
-.all_skill{
+.all_skill {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 20px;
 }
-@media(max-width:780px){
-  .section{
-display: flex;
-flex-direction: column-reverse;
+.beket {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 20px;
+}
+.i18n {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: center;
+}
+.xbts{
+  width: 533px;
+  border-radius: 20px;
+}
+.sass{
+  width: 140px;
+}
+.figma{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.figma img{
+  width: 140px;
+  height: 140px;
+}
+@media (max-width: 780px) {
+  .felx{
+    display: flex;
+    flex-direction: column;
   }
-  .developer{
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .developer {
     color: transparent;
     -webkit-text-stroke: 2px #000;
     -webkit-text-fill-color: transparent;
@@ -350,14 +394,14 @@ flex-direction: column-reverse;
     -ms-user-select: none;
     user-select: none;
     text-align: center;
-  }  
-  .text{
+  }
+  .text {
     width: 100%;
   }
-  .About_Us{
+  .About_Us {
     display: none;
   }
-  .end{
+  .end {
     font-size: 4rem;
     text-align: center;
   }
@@ -375,26 +419,26 @@ flex-direction: column-reverse;
     object-position: center;
   }
   .java {
-  gap: 30px;
-  margin-bottom: 30px;
-}
-.redux{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr !important;
-  text-align: center;
-  align-items: center;
-  margin-left: 0;
-}
-.none{
-  display: block;
-}
-.felx img{
-  width: 100%;
-}
-.btn-mobil{
-  margin: 0;
-}
-.btn-mobile{
-  font-size: 14px;
-}
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .redux {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .none {
+    display: block;
+  }
+  .felx img {
+    width: 100%;
+  }
+  .btn-mobil {
+    margin: 0;
+  }
+  .btn-mobile {
+    font-size: 14px;
+  }
 }

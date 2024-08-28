@@ -23,7 +23,7 @@ export default function AboutMe() {
         </div>
         <div data-aos="flip-right" data-aos-duration="1000"  className="detil-about">
           <h3>Опыт работы</h3>
-          <h6>Компания Navis.devs</h6>
+          <h6>Компания Navis.devs , Soft Ordo</h6>
           <p>Front-End Разработчик</p>
           <span>2022 г. июль -2024 г. май</span>
         </div>

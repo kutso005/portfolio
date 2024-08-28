@@ -44,7 +44,7 @@ export default function Section() {
               {isExpanded ? "Скрыть" : "Читать дальше"}
             </p>
           </div>
-          <button  className="btn">Обсудить проект</button>
+          <button  className="btn"> <a href="https://t.me/altynbekovz" target="_blank">Обсудить проект</a></button>
         </div>
         <img   data-aos="zoom-in" data-aos-duration="1000"  src={logo} alt="" className="logo" />
       </div>
