@@ -122,6 +122,7 @@ export default function Programms() {
           alt=""
         />
         <img
+        className="sass"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
@@ -129,6 +130,7 @@ export default function Programms() {
           alt=""
         />
         <img
+        className="sass"
           data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500"
